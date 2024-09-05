@@ -1,301 +1,402 @@
 {
-  "_type": "export",
-  "__export_format": 4,
-  "__export_date": "2024-09-03T01:47:16.520Z",
-  "__export_source": "insomnia.desktop.app:v2023.5.8",
-  "resources": [
-    {
-      "_id": "req_d0ec6c54bcd34c438eb35498b812adc1",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876774738,
-      "created": 1700866548227,
-      "url": "http://localhost:3000",
-      "name": "Deletar cobrança",
-      "description": "",
-      "method": "DELETE",
-      "body": {},
-      "parameters": [],
-      "headers": [{ "name": "User-Agent", "value": "insomnia/2023.5.8" }],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1700866548227,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "parentId": null,
-      "modified": 1700500272323,
-      "created": 1700500272323,
-      "name": "Api-projeto-final",
-      "description": "",
-      "scope": "collection",
-      "_type": "workspace"
-    },
-    {
-      "_id": "req_c28848ff6e29437f89952175b3992586",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876781118,
-      "created": 1700855849248,
-      "url": "http://localhost:3000/updateCharge",
-      "name": "Atualizar Cobrança",
-      "description": "",
-      "method": "PUT",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{  \t\"id_cob\": \"b1fa3cff-5aef-4f3a-af23-7089f760251d\",\n     \"valor\": 46000,\n     \"data_venc\": \"2023-11-23T03:00:00.000Z\",\n     \"status\": \"Pendente\",\n     \"descricao\": \"Comprinhas Black Friday\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1700855849248,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_489cf155bb7d47568fc417f48de7d508",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876788677,
-      "created": 1700851961802,
-      "url": "http://localhost:3000/addCharge",
-      "name": "Adicionar Cobrança",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n\t\"cliente_id\": 75,\n\t\"descricao\": \"teste pendente\",\n\t\"data_venc\": \"2023-11-23\",\n\t\"valor\": 30000,\n\t\"status\": \"Pendente\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1700851961802,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_8925eefe57ae41408fef78ed4ff753a7",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876793372,
-      "created": 1700694405460,
-      "url": "http://localhost:3000/allCharges/75",
-      "name": "Listar Cobranças",
-      "description": "",
-      "method": "GET",
-      "body": {},
-      "parameters": [],
-      "headers": [{ "name": "User-Agent", "value": "insomnia/2023.5.8" }],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1700694405460,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_ec01e9ace7b74ee88a6a38b5de9c9f2f",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876797884,
-      "created": 1700500284572,
-      "url": "http://localhost:3000/signup",
-      "name": "Cadastro de usuario",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n  \"nome\": \"Usuario Teste\",\n  \"email\": \"registerTeste2@gmail.com\",\n  \"senha\": \"@Teste1234\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": {},
-      "metaSortKey": -1700500284572,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_81bee0fcd30c40c295dd071c9fc42bc1",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700853452580,
-      "created": 1700500283505,
-      "url": "http://localhost:3000/login",
-      "name": "Login",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{\n  \"email\": \"frangomes@gmail.com\",\n    \"senha\": \"Tabela01@\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": { "type": "bearer" },
-      "metaSortKey": -1700500283505,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_99a21a6980b345c3afaa3ca66bee75d9",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700504047092,
-      "created": 1700500281719,
-      "url": "http://localhost:3000/updateUser",
-      "name": "Editar usuario",
-      "description": "",
-      "method": "PUT",
-      "body": { "mimeType": "application/json", "text": "" },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1700500281719,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_f9ac067f1e7b470b98e1da82ab6eaa04",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700851919917,
-      "created": 1700500366198,
-      "url": "http://localhost:3000/registerClient",
-      "name": "Cadastro de cliente",
-      "description": "",
-      "method": "POST",
-      "body": {
-        "mimeType": "application/json",
-        "text": "{ \n  \"nome\": \"Teste Status\",\n  \"email\": \"clienteUpdate3@gmail.com\",\n\t\"cpf\": \"606.945.990-32\",\n\t\"telefone\": \"(11) 999112334\"\n}"
-      },
-      "parameters": [],
-      "headers": [
-        { "name": "Content-Type", "value": "application/json" },
-        { "name": "User-Agent", "value": "insomnia/2023.5.8" }
-      ],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1699033904794.5,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "req_f5621edc79bc445abff8449c21997a6d",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700876807651,
-      "created": 1700500276073,
-      "url": "http://localhost:3000/consultClient",
-      "name": "Consulta de Clientes",
-      "description": "",
-      "method": "GET",
-      "body": {},
-      "parameters": [],
-      "headers": [{ "name": "User-Agent", "value": "insomnia/2023.5.8" }],
-      "authentication": {
-        "type": "bearer",
-        "token": "{% response 'body', 'req_81bee0fcd30c40c295dd071c9fc42bc1', 'b64::JC50b2tlbg==::46b', 'never', 60 %}"
-      },
-      "metaSortKey": -1699033904694.5,
-      "isPrivate": false,
-      "settingStoreCookies": true,
-      "settingSendCookies": true,
-      "settingDisableRenderRequestBody": false,
-      "settingEncodeUrl": true,
-      "settingRebuildPath": true,
-      "settingFollowRedirects": "global",
-      "_type": "request"
-    },
-    {
-      "_id": "env_9910ee3a844fc285d18b056b66adc5a39311a955",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700500272336,
-      "created": 1700500272336,
-      "name": "Base Environment",
-      "data": {},
-      "dataPropertyOrder": null,
-      "color": null,
-      "isPrivate": false,
-      "metaSortKey": 1700500272337,
-      "_type": "environment"
-    },
-    {
-      "_id": "jar_9910ee3a844fc285d18b056b66adc5a39311a955",
-      "parentId": "wrk_8d9649c50913431ebd30de7d6cd61bc9",
-      "modified": 1700500272339,
-      "created": 1700500272339,
-      "name": "Default Jar",
-      "cookies": [],
-      "_type": "cookie_jar"
-    }
-  ]
+    "clientName": "Thunder Client",
+    "collectionName": "Api-projeto-final",
+    "collectionId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+    "dateExported": "2024-09-04T23:59:42.861Z",
+    "version": "1.2",
+    "folders": [
+        {
+            "_id": "9e48d2d6-a661-44f8-a492-a6b57ffc5f15",
+            "name": "user",
+            "containerId": "",
+            "created": "2024-09-04T23:41:24.927Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "cliente",
+            "containerId": "",
+            "created": "2024-09-04T23:44:38.525Z",
+            "sortNum": 20000
+        },
+        {
+            "_id": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "cobranca",
+            "containerId": "",
+            "created": "2024-09-04T23:47:39.874Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "4087b9a2-d984-46ee-a371-bd425fbd8c3f",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "9e48d2d6-a661-44f8-a492-a6b57ffc5f15",
+            "name": "Cadastro de usuario",
+            "url": "http://localhost:3000/signup",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-09-04T22:05:26.632Z",
+            "modified": "2024-09-04T23:37:22.186Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"usuario\",\n  \"email\": \"usuario@gmail.com\",\n  \"senha\": \"@Teste1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "9ca419ad-7359-4594-b87e-a22203f93dca",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "Cadastro de cliente",
+            "url": "http://localhost:3000/registerClient",
+            "method": "POST",
+            "sortNum": 5000,
+            "created": "2024-09-04T22:05:26.635Z",
+            "modified": "2024-09-04T23:42:45.388Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"nome\": \"Teste cliente\",\n  \"email\": \"cliente1@gmail.com\",\n\t\"cpf\": \"606.945.990-30\",\n\t\"telefone\": \"(11) 999112334\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "ff9a1ade-eeb1-4581-b890-7216eef7db75",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "9e48d2d6-a661-44f8-a492-a6b57ffc5f15",
+            "name": "Login",
+            "url": "http://localhost:3000/login",
+            "method": "POST",
+            "sortNum": 7500,
+            "created": "2024-09-04T22:05:26.633Z",
+            "modified": "2024-09-04T23:37:44.383Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"usuario@gmail.com\",\n    \"senha\": \"@Teste1234\"\n}",
+                "form": []
+            }
+        },
+        {
+            "_id": "dd8ae8f4-7833-49d0-a565-d8409f9d7368",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "9e48d2d6-a661-44f8-a492-a6b57ffc5f15",
+            "name": "Editar usuario",
+            "url": "http://localhost:3000/updateUser",
+            "method": "PUT",
+            "sortNum": 8750,
+            "created": "2024-09-04T22:05:26.634Z",
+            "modified": "2024-09-04T23:40:08.993Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nome\": \"Usuario2\",\n  \"email\": \"usuario2@gmail.com\",\n  \"senha\": \"@Teste1234\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "35f5ee63-fd0b-4537-a400-0ea742381b12",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "Adicionar Cobrança",
+            "url": "http://localhost:3000/addCharge",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2024-09-04T22:05:26.630Z",
+            "modified": "2024-09-04T23:53:51.881Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n\t\"cliente_id\": 3,\n\t\"descricao\": \"teste pendente2\",\n\t\"data_venc\": \"2024-11-23\",\n\t\"valor\": 30000,\n\t\"status\": \"Pendente\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "63b693f3-1144-449a-bf74-44de19e2ab92",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "9e48d2d6-a661-44f8-a492-a6b57ffc5f15",
+            "name": "detalhes usuario",
+            "url": "http://localhost:3000/userDetails/3",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-09-04T23:40:55.523Z",
+            "modified": "2024-09-04T23:40:55.523Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "bd2c1e69-4de3-44a8-b78c-9b231bb020e5",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "detalhe cliente",
+            "url": "http://localhost:3000/clientDetails/3",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-09-04T23:43:49.283Z",
+            "modified": "2024-09-04T23:44:24.979Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "9933a513-37d8-42c7-bd96-b645787abb2e",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "Atualizar Cobrança",
+            "url": "http://localhost:3000/updateCharge",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-09-04T22:05:26.629Z",
+            "modified": "2024-09-04T23:51:53.562Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"cliente_id\": 3,\n  \"id_cob\": \"b7634cbf-bb95-4e65-99dd-3310159585aa\",\n     \"valor\": 46000,\n     \"data_venc\": \"2023-11-23T03:00:00.000Z\",\n     \"status\": \"Pendente\",\n     \"descricao\": \"Comprinhas Black Friday\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "bf35ebe5-9319-413b-9abc-2d7539b69d5f",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "atualizar cliente",
+            "url": "http://localhost:3000/updateClient/3",
+            "method": "PUT",
+            "sortNum": 15000,
+            "created": "2024-09-04T23:46:05.035Z",
+            "modified": "2024-09-04T23:46:39.903Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{ \n  \"nome\": \"novo cliente\",\n  \"email\": \"novocliente@gmail.com\",\n\t\"cpf\": \"606.945.990-30\",\n\t\"telefone\": \"(11) 999112334\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "09e1235e-e033-4017-95e9-fa83ec73fc77",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "Listar Cobranças",
+            "url": "http://localhost:3000/allCharges",
+            "method": "GET",
+            "sortNum": 17500,
+            "created": "2024-09-04T22:05:26.631Z",
+            "modified": "2024-09-04T23:49:35.367Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "c41ec972-d162-438e-95f0-8bfda994e854",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "detalhar cobrança",
+            "url": "http://localhost:3000/chargeDetails/b7634cbf-bb95-4e65-99dd-3310159585aa",
+            "method": "GET",
+            "sortNum": 18750,
+            "created": "2024-09-04T23:49:56.394Z",
+            "modified": "2024-09-04T23:50:25.609Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "b466dd76-a574-4663-8d7a-e92afa89bf1e",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "dashboard cobrancas",
+            "url": "http://localhost:3000/dashboardCharges",
+            "method": "GET",
+            "sortNum": 19375,
+            "created": "2024-09-04T23:50:37.428Z",
+            "modified": "2024-09-04T23:52:18.070Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "7a4f8ff9-e642-4325-a9e2-46ef0c7fdbd2",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "Deletar cobrança",
+            "url": "http://localhost:3000/deleteCharge/733e6c1b-606c-43c5-986b-99d69277bb67",
+            "method": "DELETE",
+            "sortNum": 20000,
+            "created": "2024-09-04T22:05:26.627Z",
+            "modified": "2024-09-04T23:54:14.215Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "cd3fd082-6b8b-4de9-b1f4-4e8fb2eb4e31",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "procurar cliente",
+            "url": "http://localhost:3000/searchClients",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2024-09-04T23:45:18.723Z",
+            "modified": "2024-09-04T23:45:42.420Z",
+            "headers": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "57208054-a631-44b4-bab4-00571cf29531",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "42cebfdc-d8b0-410c-b664-f6cf21cab9c3",
+            "name": "procurar cobrancas",
+            "url": "http://localhost:3000/searchCharges",
+            "method": "GET",
+            "sortNum": 27500,
+            "created": "2024-09-04T23:55:55.995Z",
+            "modified": "2024-09-04T23:56:19.897Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "865ab19e-539f-40c4-90d8-f5c0b0497fef",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "Consulta de Clientes",
+            "url": "http://localhost:3000/consultClient",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2024-09-04T22:05:26.636Z",
+            "modified": "2024-09-04T23:43:19.131Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        },
+        {
+            "_id": "3390d293-6fe5-4f77-a5ca-84462db0504a",
+            "colId": "b8b424c9-3ed0-447f-bdf1-a1e863e5e703",
+            "containerId": "12c42294-2cda-4706-ad0d-328630a9819b",
+            "name": "dashboard clientes",
+            "url": "http://localhost:3000/dashboardClients",
+            "method": "GET",
+            "sortNum": 40000,
+            "created": "2024-09-04T23:46:52.665Z",
+            "modified": "2024-09-04T23:47:07.508Z",
+            "headers": [
+                {
+                    "name": "User-Agent",
+                    "value": "insomnia/2023.5.8"
+                }
+            ],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwiaWF0IjoxNzI1NDkzMDY0LCJleHAiOjE3MjU1MjE4NjR9.wB3c1qwwDECtrPtCDOStSceRMMbdB_9uydpCTJ9Uvkk"
+            }
+        }
+    ],
+    "ref": "poUUcvAOGBD6eOxR62UrbLR-F4nM0FJePAaue1dOIH7TUApMdakZ4sqUGi2cU3HfE1RbEkHyyI2kOH8b-ksTCg"
 }
