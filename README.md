@@ -2,8 +2,6 @@
 
 # Desafio Final- PARTE BACKEND
 
-
-
 # Variaveis de ambiente para iniciar a api (vai utilizar o arquivo .env)
 O projeto utiliza variaveis de ambiente na qual você pode utilizar um banco de dados local ou online (desaful values podem ocorrer mudanças dependendo do seu banco de dados):
 
@@ -17,12 +15,9 @@ O projeto utiliza variaveis de ambiente na qual você pode utilizar um banco de 
 |DB_NAME           | nome do banco de dados            | "*"      |
 |JWT_HASH           | jason web token hash            | "testehashjwt"      |
 
-
 # Pre-requisites
 - Instalar [Node.js](https://nodejs.org/en/) version 8.0.0
- 
 - Configurar o arquivo .env com base no arquivo .env.exemple com as suas respectivas variaveis de ambiente  [.env](https://www.npmjs.com/package/dotenv)
-
 
 # Getting started
 - Clone o repositorio (https://github.com/cubos-academy/desafio-front-modulo4-next-parteBack-v3-resolucao)

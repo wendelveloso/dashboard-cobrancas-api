@@ -31,7 +31,7 @@ async function updateClientData(req, res) {
       .andWhere({ email })
       .first();
 
-    if (emailExists) {
+    if (emailExists && emailExists !== email) {
       return res
         .status(400)
         .json({ mensagem: "O e-mail já está cadastrado para outro cliente" });
@@ -43,7 +43,7 @@ async function updateClientData(req, res) {
       .andWhere({ usuario_id: id })
       .first();
 
-    if (cpfExists) {
+    if (cpfExists && cpfExists !== cpf) {
       return res
         .status(400)
         .json({ mensagem: "O CPF já está cadastrado para outro cliente" });
