@@ -13,7 +13,7 @@ async function addCharge(req, res) {
       return res.status(400).json({ mensagem: "Cliente não encontrado" });
     }
 
-    if (!["Pendente", "Paga"].includes(status)) {
+    if (!["Pendente", "Paga", "Vencida"].includes(status)) {
       return res.status(400).json({ mensagem: "Status de cobrança inválido" });
     }
 
