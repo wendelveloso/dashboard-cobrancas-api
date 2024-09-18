@@ -1,0 +1,115 @@
+curl --request POST \
+  --url http://localhost:3001/signup \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/2023.5.8' \
+  --data '{
+	"nome": "Usuario Teste",
+	"email": "registerTeste2@gmail.com",
+	"senha": "@Teste1234"
+}'
+
+curl --request POST \
+  --url http://localhost:3001/login \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/2023.5.8' \
+  --data '{
+	"email": "registerTeste2@gmail.com",
+	"senha": "@Teste1234"
+}'
+
+curl --request GET \
+  --url http://localhost:3001/userDetails/1 \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/9.2.0'
+
+curl --request PUT \
+  --url http://localhost:3001/updateUser \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/2023.5.8' \
+  --data '{
+	"nome": "Usuario Testes",
+	"email": "registerTeste2@gmail.com",
+	"telefone": "476544767",
+	"cpf": "12312312300"
+}'
+
+curl --request POST \
+  --url http://localhost:3001/registerClient \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/2023.5.8' \
+  --data '{ 
+  "nome": "Teste Status",
+	"email": "teste3@gmail.com",
+	"cpf": "606.944.940-27",
+	"telefone": "(11) 999112334"
+}'
+
+curl --request GET \
+  --url http://localhost:3001/clientDetails/1 \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/9.2.0'
+
+curl --request GET \
+  --url http://localhost:3001/consultClient \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url http://localhost:3001/consultClient \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url http://localhost:3001/dashboardCharges \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/9.2.0'
+
+curl --request GET \
+  --url http://localhost:3001/dashboardCharges \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/9.2.0'
+
+curl --request POST \
+  --url http://localhost:3001/addCharge \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'Content-Type: application/json' \
+  --header 'User-Agent: insomnia/2023.5.8' \
+  --data '{
+	"cliente_id": 1,
+	"descricao": "teste pendente",
+	"data_venc": "2024-08-14",
+	"valor": 30000,
+	"status": "Vencida"
+}'
+
+curl --request GET \
+  --url http://localhost:3001/allCharges \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url 'http://localhost:3001/searchCharges?searchTerm=Teste' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url 'http://localhost:3001/searchCharges?searchTerm=Teste' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url 'http://localhost:3001/searchCharges?searchTerm=Teste' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url 'http://localhost:3001/searchCharges?searchTerm=Teste' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
+
+curl --request GET \
+  --url 'http://localhost:3001/searchCharges?searchTerm=Teste' \
+  --header 'Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzI2NDQ2MzIyLCJleHAiOjE3MjY0NzUxMjJ9.9aoMtw66s-UgHiXNq0XbSWTtpKyQQ2Mf0cMxdY3R_QI' \
+  --header 'User-Agent: insomnia/2023.5.8'
