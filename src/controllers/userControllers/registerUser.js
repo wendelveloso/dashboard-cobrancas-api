@@ -14,7 +14,7 @@ async function registerUser(req, res) {
 
     const {
       senha: _,
-      cpf,
+      cpf,  
       telefone,
       ...userData
     } = await saveUser({

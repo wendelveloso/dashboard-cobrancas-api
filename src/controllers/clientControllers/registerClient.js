@@ -37,6 +37,7 @@ async function registerClient(req, res) {
       Cliente: { ...newClient },
     });
   } catch (error) {
+    console.log(error.message);
     return res.status(500).json({
       mensagem: "Algo inesperado aconteceu ao realizar o cadastro",
       erro: error.message,

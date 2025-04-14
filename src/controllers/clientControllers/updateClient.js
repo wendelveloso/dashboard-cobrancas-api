@@ -26,15 +26,15 @@ async function updateClientData(req, res) {
       return res.status(404).json({ mensagem: "Cliente não encontrado" });
     }
 
-    const emailExists = await knex("clientes")
+    const emailExists = await knex("clientes")  
       .whereNot({ id: clientId })
       .andWhere({ email })
       .first();
 
     if (emailExists && emailExists !== email) {
       return res
-        .status(400)
-        .json({ mensagem: "O e-mail já está cadastrado para outro cliente" });
+      .status(400)
+      .json({ mensagem: "O e-mail já está cadastrado para outro cliente" });
     }
 
     const cpfExists = await knex("clientes")

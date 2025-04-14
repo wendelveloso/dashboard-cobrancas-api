@@ -17,6 +17,7 @@ async function deleteCharge(req, res) {
       .first();
 
     if (!existingClient) {
+      
       return res.status(404).json({ mensagem: "A cobrança não existe" });
     }
 

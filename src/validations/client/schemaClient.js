@@ -2,13 +2,13 @@ const joi = require("joi");
 
 const schemaClient = joi.object({
   nome: joi.string().trim().strict().required().messages({
-    "any.required": "Por favor preencha todos os campos",
+    "any.required": "Por favor preencha todos os campos1",
     "string.empty": "O preenchimento do nome é obrigatório",
     "string.trim": "O campo nome não pode conter espaços em branco",
     "string.base": "Insira um nome válido",
   }),
   email: joi.string().email().trim().strict().required().messages({
-    "any.required": "Por favor preencha todos os campos",
+    "any.required": "Por favor preencha todos os campos2",
     "string.empty": "O preenchimento do e-mail é obrigatório",
     "string.email": "Digite um e-mail válido",
     "string.base": "Insira um e-mail válido",
@@ -17,12 +17,12 @@ const schemaClient = joi.object({
   cpf: joi.string().trim().strict().required().messages({
     "string.empty": "O campo CPF é obrigatório",
     "string.trim": "Digite um CPF válido",
-    "any.required": "Por favor preencha todos os campos",
+    "any.required": "Por favor preencha todos os campos3",
   }),
   telefone: joi.string().trim().strict().required().messages({
     "string.empty": "O campo telefone é obrigatório",
     "string.trim": "Digite telefone válido",
-    "any.required": "Por favor preencha todos os campos",
+    "any.required": "Por favor preencha todos os campos4",
   }),
 });
 

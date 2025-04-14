@@ -11,7 +11,7 @@ function updateClientStatus(status, updatedDate) {
     status === "Paga" ||
     (status === "Pendente" && !dateValidator(updatedDate))
   ) {
-    return "Em Dia";
+    return "Em dia";
   } else {
     return "Inadimplente";
   }

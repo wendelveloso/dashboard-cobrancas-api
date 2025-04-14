@@ -24,7 +24,7 @@ create table clientes(
   foreign key (usuario_id) references usuarios(id)
 );
 
-alter table clientes alter column status set default 'Em Dia';
+alter table clientes alter column status set default 'Em dia';
 
 CREATE EXTENSION IF NOT EXISTS "uuid-ossp";
 
