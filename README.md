@@ -62,6 +62,18 @@ chargeRoutes
 `DELETE` `/deleteCharge/:idCharge` _Remove uma cobrança específica com base no idCharge informado na rota._<br>
 `GET` `/dashboardCharges/` _Retorna dados gerais e estatísticas das cobranças para exibir em dashboards._<br>
 
+<br>
+
+## 🌐 Repositório do Frontend
+
+O repositório do frontend pode ser encontrado no link abaixo:
+
+👉 [Acesse o repositório do frontend aqui](https://github.com/wendelveloso/dashboard-cobrancas-web)
+
+> Recomenda-se rodar o frontend junto com este backend para utilizar todas as funcionalidades da aplicação.
+
+<br>
+
 ## _Tecnologias usadas_
 - Javascript
 - Node.js
