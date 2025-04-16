@@ -64,6 +64,14 @@ chargeRoutes
 
 <br>
 
+## _Tecnologias usadas_
+- Javascript
+- Node.js
+- Express.js
+- JSON
+
+<br>
+
 ## 🌐 Repositório do Frontend
 
 O repositório do frontend pode ser encontrado no link abaixo:
@@ -72,10 +80,3 @@ O repositório do frontend pode ser encontrado no link abaixo:
 
 > Recomenda-se rodar o frontend junto com este backend para utilizar todas as funcionalidades da aplicação.
 
-<br>
-
-## _Tecnologias usadas_
-- Javascript
-- Node.js
-- Express.js
-- JSON
